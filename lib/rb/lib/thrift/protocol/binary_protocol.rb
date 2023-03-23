@@ -140,7 +140,7 @@ module Thrift
     def read_struct_begin; nil; end
 
     def read_field_begin
-      type = read_byte
+      type = 0
       if (type == Types::STOP)
         [nil, type, 0]
       else
